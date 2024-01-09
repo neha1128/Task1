@@ -1,0 +1,245 @@
+<!Doctype>
+<html>
+<head>
+	<style>
+	*{
+		margin: 0px
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	section{
+		min-height: 100vh;
+		background-image: url("https://www.weddingglance.com/wp-content/uploads/2021/12/bridal-eye-makeup_OI.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	header{
+		height:40px;
+		justify-content: space-betweeen;
+		align-items: center;
+		width:100%;
+		padding:0 20px;
+		
+	}
+	nav h1{
+		float: left;
+		line-height: 20px;
+		font-size: 35px;
+		font-size: inline;
+		color:white;
+	}
+	nav ul{
+		float: right;
+		line-height:40px
+	}
+	
+	nav ul li{
+		display: inline-block;
+		list-style: none;
+		padding: 0 20px;
+		
+	}
+	nav ul li:last-child{
+		margin-right:0;
+	}
+	nav ul li a{
+		color:white;
+		text-decoration: none;
+		padding:22px 0;
+		display: inline-block;
+		transition: all ease 0.3s;
+		font-size:20px;
+	}
+	nav ul li a:hover{
+		color:black;
+		
+	}
+	nav ul li .active{
+		color: black;
+	
+	}
+	nav ul .submenu{
+		position:absolute;
+		width:150px;
+		background-color:#fffffff;
+		box-shadow:0 25px 25px ;
+		margin-top:-50px;
+		opacity:0px;
+		z-index: -999;
+		transition: all ease 0.5s;
+		text-align:left;
+		margin-right:20px;
+	}
+	nav ul li:hover .submenu{
+		z-index:100;
+		opacity:1;
+		margin-top:0;
+	} 
+	nav ul .submenu li{
+		margin:-10;
+		width:70%;
+	}
+	nav ul .submenu li a{
+		padding:10px 5px;
+		display:inline-block;
+		width:100px;
+	}
+	.btn{
+		float:right;
+		margin-top:250px;
+		text-align:right;
+		transform: translateX(150vh);
+		font-size:30px;
+		color:black;
+		background-color:purple;
+	}
+
+		
+	.article{
+		width:80%;
+		float:right;
+		margin:auto;
+		text-align:right;
+		transform: translateY(25vh);
+		font-size:40px;
+		color:white;
+		
+	}
+	
+	footer{
+		background-color:#111;
+	}
+	.footerContainer{
+		width:100%;
+		padding:70px 30px 20px;
+	}
+	.socialIcons{
+		display:flex;
+		justify-content:center;
+	}
+	.socialIcons a{
+		text-decoration:none;
+		padding:10px;
+		background-color: white;
+		margin:10px;
+		border-radius=50%;
+	}
+	.socialIcons a i{
+		font-size=2em;
+		color:black;
+		opacity:0.9;
+	}
+	.socialIcons a:hover{
+		background-color:#111;
+		transition:0.5s;
+	}
+	.socialIcons a:hover i{
+		color:white;
+		transition:0.5s;
+	}
+	.footerNav{
+		margin:30px 0;
+	}
+	.footerNav ul{
+		display:flex;
+		justify-content:center;
+	}
+	.footerNav ul li a{
+		color:white;
+		margin:20px;
+		text-decoration:none;
+		font-size:1.3em;
+		opacity:0.7;
+		transition:0.5s;
+	}
+	.footerNav ul li a:hover{
+		opacity: 1;
+	}
+	.footerBottom{
+		background-color:#000;
+		padding:20px;
+		text-align:center;
+	}
+	.footerBottom p{
+		color:white;
+	}
+	.designer{
+		opacity:0.7;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		font-weight:400;
+		margin:0px 5px;
+	}
+		
+	</style>
+	<title>Create a landing page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+</head>
+<body>
+	<section>
+		<header>
+			<nav>
+				<h1>GLITTER LIFE</h1>
+				<ul>
+					<li><a href="" class="active">Home</a></li>
+		
+					<li><a href="">Services</a>
+							<ul class="submenu">
+								<li><a href="">Makeup</a></li>
+								<li><a href="">Hairstyle</a></li>
+								<li><a href="">Natural</a></li>
+							</ul>
+					</li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</nav>
+			<div class="article">
+				<span>Find The Best</span> <span> MAKEUP ARTIST</span>
+				
+			</div>
+			<div><button class="btn">Book now</button></div>
+		</header>
+	</section>
+	<footer>
+		<div class="footerContainer">
+			<div class="socialIcons">
+				<a href=""><i class="fa-brands fa-facebook"></i></a>
+				<a href=""><i class="fa-brands fa-instagram"></i></a>
+				<a href=""><i class="fa-brands fa-twitter"></i></a>
+				<a href=""><i class="fa-brands fa-google-plus"></i></a>
+				<a href=""><i class="fa-brands fa-youtube"></i></a>
+			</div>
+			<div class="footerNav">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footerBottom">
+				<p>Copyright &copy;2024; Designed by <span class="desiger">Neha</span>
+		</div>
+	</footer>
+		
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
